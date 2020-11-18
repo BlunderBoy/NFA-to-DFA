@@ -1,4 +1,4 @@
-#eNFA to DFA
+# eNFA to DFA
 Program to transform an input eNFA (epsilon NFA) to a DFA.
 
 # Usage
