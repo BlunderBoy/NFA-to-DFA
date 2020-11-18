@@ -1,3 +1,7 @@
+#eNFA to DFA
+Program to transform an input eNFA (epsilon NFA) to a DFA.
+
+# Usage
 python3 main.py path-input-file path-output-file
 
 
