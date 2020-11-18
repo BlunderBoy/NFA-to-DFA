@@ -1,0 +1,14 @@
+Macarie Razvan Cristian 332CB
+
+    Cautarea in text este usoara dupa ce am construit matricea delta. Pentru fiecare
+caracter: stare = delta[stare][caracter]. Cand am ajuns intr-o stare finala inseamna
+ca am gasit acel pattern in text.
+
+    Matricea delta:
+    1. Facem loop printr-o lista de prefixe ale patternului. (liniile matricei delta)
+    2. La fiecare prefix adaugam pe rand cate o litera din ascii_uppercase.
+    3. Daca cuvantul rezultat la pasul 2 este prea mare scapam de primele litere pana este cat patternul.
+    4. Verificam daca cuvantul rezultat face match cu vreun prefix din lista de prefixe. Daca nu face match
+eliminam din el cate o litera pana face match cu vreun prefix din lista de prefixe(lucru care este garantat
+pentru ca lista de prefixe contine cuvantul vid -> '' )
+    5. Adaugam in matrice indexul prefixului cu care am facut match din lista de prefixe.
